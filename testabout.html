@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>THAYSHOP</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" type="image/x-icon" href="/Images/basketball-ball.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="about.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-fluid position-relative p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand logo">
+                    <h3 class="m-0 text-primary"><span class="text-dark"><i class='bx bxs-basketball' ></i>THAYSHOP</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-3 navtext">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="testabout.html" class="nav-item nav-link active " style="color: aqua;">About</a>
+                        <a href="index.html" class="nav-item">Product</a>
+                        <a href="contact.html" class="nav-item">Contact</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 header-icons">
+                    <i class='bx bx-search' id="search-icons"></i>
+                    <i class='bx bx-cart' id="cart-icons"></i>
+                    <i class='bx bx-user' id="user-icons" ></i>
+                    <i class='bx bx-menu' id="menu-icons" ></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="search" name="" id="search-item" placeholder="Search ..."
+                onkeyup="searchs()">
+            </div>
+            <!--Cart Box-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+                
+                </div>
+                <!--Total-->
+            <div class="total">
+                <div class="total-title">Total: </div>
+                <div class="total-price">0 VND</div>
+            </div>
+            <!--Buy Button-->
+            <button class="truck-button">
+                <span class="default">Complete Order</span>
+                <span class="success">
+                    Order Placed
+                    <svg viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg>
+                </span>
+                <div class="truck">
+                    <div class="wheel"></div>
+                    <div class="back"></div>
+                    <div class="front"></div>
+                    <div class="box"></div>
+                </div>
+            </button>
+
+            
+
+
+
+            
+            <!--Cart Close-->
+            <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <!--USER-->
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <a href="">You already have an account?</a>
+                        <button class="button-singin-up">Sign Up</button>
+                    </form>
+                </div>
+
+                <!--LOG IN FORM -->
+
+                <div class="user form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="button-singin-up">Sign In</button>
+                    </form>
+                </div>
+                <div class="user overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 style="color:black;">Hi, Friend!</h1>
+                            <p style="color: black;">Nếu bạn có tải khoản rồi hãy bấm SIGNIN</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1 style="color: black;">Hello, Friend!</h1>
+                            <p style="color: black;">Nếu bạn chưa có tải khoản hãy bấm vào SIGN UP</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                    <i class='bx bx-x' id="close-cart2"></i>
+                </div>
+            
+            
+            
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./Images/ນາຍແບບ2.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;;">About Us</h6>
+                        <h1 class="mb-3 text-dark">THAYSHOP IS THE TOP1 SELLER BASKETBALL SHOES</h1>
+                        <p>THAYSHOP là cửa hàng bán giày bóng rổ tốt nhất hiện nay , nhập khẩu từ USA , hàng chính hãng 100% nếu phát hiện ra sản phẩm không chính hãng hoàn tiền 100%, chào mừng khách hàng đã đến với website của THAYSHOP</p>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="./Images/shoes1.jpg" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="./Images/shoes2.jpg" alt="">
+                            </div>
+                        </div>
+                        <a href="index.html" class="btn btn-primary mt-1">Shop Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Giá cả cạnh tranh</h5>
+                            <p class="m-0">Đây là cửa hàng bán đồ rẻ nhất hiện nay!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-award text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Dịch vụ tốt nhất</h5>
+                            <p class="m-0">Đóng gói , giao hàng nhanh , giao tận giường!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-globe text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Bảo hành lâu dài</h5>
+                            <p class="m-0">Có thể hoàn tiền trong vòng 15 ngày (FAKE)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Ưu đãi lớn</h6>
+                        <h1 class="text-white"><span class="text-primary">10% OFF</span> Cho đơn hàng đầu tiên</h1>
+                    </div>
+                    <p class="text-white">Nhanh chóng đăng ký tải khoản để nhận mã giảm giá 10% cho đơn hàng đầu tiên. Mã khuyến mãi giảm giá này có thể sử
+                        dụng được 1 lần duy cho 1 sản phẩm duy nhất và phải thanh toán bằng Ibanking hoặc Credit Card.
+                    </p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Hàng chính hãng 100%.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Fake hoàn tiền 100%.</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Đóng gói chắc chắn giao hàng very fast</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Đăng ký ngay</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-3" placeholder="Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-3" placeholder="Email" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control p-3" placeholder="Password" required="required" />
+                                </div>
+                                <div style="text-align: center;">
+                                <a style="text-align: center;" href="">You already have an account?</a>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block py-3" type="submit">Sign Up Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Giới thiệu</h6>
+                <h1>Nhân viên bán hàng</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="./Images/nhanvien/thay.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Thay Panyasak</h5>
+                            <p class="m-0">Tính toán</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="./Images/nhanvien/hieu.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Bạch Phan Minh Hiếu</h5>
+                            <p class="m-0">Giới thiệu sản phẩm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="./Images/nhanvien/phong.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Nguyễn Quốc Gió</h5>
+                            <p class="m-0">Ngồi chơi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
+                    <div class="team-item bg-white mb-4">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="./Images/nhanvien/huynh.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h5 class="text-truncate">Nguyễn Nhật Huỳnh</h5>
+                            <p class="m-0">Đóng gói sản phẩm </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white text-black-50 py-0 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-dark">THAYSHOP</span></h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <h6 class="text-dark text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">SUPPORT</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Product</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return Policy</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms Of Use</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Our Brances</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Japan</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Canada</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>United State</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Payment method</h5>
+                <img src="./Images/visa.png" alt="" style="width: 44px;">
+                <img src="./Images/master-card.png" alt="" style="width: 44px;">
+                <img src="./Images/moneygram.png" alt="" style="width: 44px;">
+                <img src="./Images/paypal.png" alt="" style="width: 44px;">
+                <h5 class="text-dark text-uppercase mt-5 mb-4  " style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>13 Street,Saphanxay,Pakse,LAOS </p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+865 20 96863648</p>
+                <p><i class="fa fa-envelope mr-2"></i>Khamkerd2000@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+
+    <!-- Template Javascript -->
+    <script src="main.js"></script>
+    <script>
+            document.querySelector("#close-cart2").onclick =() =>{
+            user.classList.remove("active")
+            }
+            
+    </script>
+</body>
+
+</html>

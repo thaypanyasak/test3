@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THAYSHOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="icon" type="image/x-icon" href="/Images/basketball-ball.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/inter-ui@3.11.0/inter.min.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-fluid position-relative p-0" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand logo">
+                    <h3 class="m-0 text-primary"><span class="text-dark"><i class='bx bxs-basketball' ></i>THAYSHOP</h3>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-3 navtext">
+                        <a href="home.html" class="nav-item">Home</a>
+                        <a href="testabout.html" class="nav-item ">About</a>
+                        <a href="index.html" class="nav-item" style="color: aqua;" >Product</a>
+                        <a href="contact.html" class="nav-item">Contact</a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0 header-icons">
+                    <i class='bx bx-search' id="search-icons"></i>
+                    <i class='bx bx-cart' id="cart-icons"></i>
+                    <i class='bx bx-user' id="user-icons" ></i>
+                    <i class='bx bx-menu' id="menu-icons" ></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input type="search" name="" id="search-item" placeholder="Search ..."
+                onkeyup="searchs()">
+            </div>
+            <!--Cart Box-->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!--Content-->
+                <div class="cart-content">
+                
+                </div>
+                <!--Total-->
+            <div class="total">
+                <div class="total-title">Total: </div>
+                <div class="total-price">0 VND</div>
+            </div>
+            <!--Buy Button-->
+            <button class="truck-button">
+                <span class="default">Complete Order</span>
+                <span class="success">
+                    Order Placed
+                    <svg viewbox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg>
+                </span>
+                <div class="truck">
+                    <div class="wheel"></div>
+                    <div class="back"></div>
+                    <div class="front"></div>
+                    <div class="box"></div>
+                </div>
+            </button>
+            <button class="btn-checkout">Checkout</button>
+            <!--CHECK OUT BUTTON-->
+            <!--Cart Close-->
+            <i class='bx bx-x' id="close-cart"></i>
+            </div>
+
+            <div class="container-fluid background checkout">
+                <div class="row padding-top-20">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 offset-md-1 offset-lg-1 offset-xl-2 padding-horizontal-40">
+                        <div class="row">
+                            <div class="col-12 main-wrapper">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div id="template" class="row panel-wrapper">
+                                            <div class="col-12 panel-header basket-header">
+                                                <div class="row">
+                                                    <div class="col-6 basket-title">
+                                                        <span class="description">THAYSHOP</span><br><span class="emphasized">Giỏ hàng</span>
+                                                    </div>
+                                                    <div class="col-6 order-number align-right">
+                                                        <span class="description">order 8</span><br><span class="emphasized">#2462345</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row column-titles padding-top-10">
+                                                    <div class="col-2 align-center"><span>Photo</span></div>
+                                                    <div class="col-5 align-center"><span>Name</span></div>
+                                                    <div class="col-2 align-center"><span>Quantity</span></div>
+                                                    <div class="col-3 align-right"><span>Price</span></div>
+                                                </div>                                    
+                                            </div>
+                                            <div class="col-12 panel-body basket-body">
+                                                <div class="row product">
+                                                    <div class="col-2 product-image"><img src="./Images/sneaker1.jpg"></div>
+                                                    <div class="col-5">ZOOM FREAK4<br><span class="additional">Size 42</span></div>
+                                                    <div class="col-2 align-right"><span class="sub"></span> X1</div>
+                                                    <div class="col-3 align-right"><span class="sub"></span> 3.669.000 VND</div>
+                                                </div>
+                                                <div class="row product">
+                                                    <div class="col-2 product-image"><img src="./Images/sneaker2.jpg"></div>
+                                                    <div class="col-5">NIKE RENEW ELEVATE 3<br><span class="additional">Size 43</span></div>
+                                                    <div class="col-2 align-right"><span class="sub"></span> X1</div>
+                                                    <div class="col-3 align-right"><span class="sub"></span> 2.349.000 VND</div>
+                                                </div>
+                                                <div class="row product">
+                                                    <div class="col-2 product-image"><img src="./Images/sneaker3.jpg"></div>
+                                                    <div class="col-5">JORDAN ONE TAKE 4 PF<br><span class="additional">Size 41</span></div>
+                                                    <div class="col-2 align-right"><span class="sub"></span> X1</div>
+                                                    <div class="col-3 align-right"><span class="sub"></span>2.929.000 VND</div>
+                                                </div>
+                                                <div class="row product">
+                                                    <div class="col-2 product-image"><img src="./Images/sneaker4.jpg"></div>
+                                                    <div class="col-5">KD TREY 5 X EP<br><span class="additional">Size 44</span></div>
+                                                    <div class="col-2 align-right"><span class="sub"></span> X1</div>
+                                                    <div class="col-3 align-right"><span class="sub"></span>2.649.000 VND</div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-12 panel-footer basket-footer">
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-8 align-right description"><div class="dive">Tổng phụ :</div></div>
+                                                    <div class="col-4 align-right"><span class="emphasized">10.596.000 VND</span></div>
+                                                    <div class="col-8 align-right description"><div class="dive">Thuế : </div></div>
+                                                    <div class="col-4 align-right"><span class="emphasized">250.000 VND</span></div>
+                                                    <div class="col-8 align-right description"><div class="dive">Ship : </div></div>
+                                                    <div class="col-4 align-right"><span class="emphasized">50.000 VND</span></div>
+                                                </div>
+                                                <hr>
+                                                <div class="row">
+                                                    <div class="col-8 align-right description"><div class="dive">tổng cộng :</div></div>
+                                                    <div class="col-4 align-right"><span class="very emphasized">10.896.000 VND</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                        <div class="row panel-wrapper">
+                                            <div class="col-12 panel-header creditcard-header">
+                                                <div class="row">
+                                                    <div class="col-12 creditcard-title">
+                                                        <span class="description">please enter your</span><br><span class="emphasized">thông tin thẻ tín dụng</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 panel-body creditcard-body">
+                                                <form action="#" method="post" target="_self">
+                                                    <fieldset>
+                                                        <label for="card-name">Name on the Card</label><br>
+                                                        <i class="fa fa-user" aria-hidden="true"></i><input type='text' id='card-name' name='card-name' placeholder='Thay Panyasak' title='Name on the Card'>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <label for="card-number">Card Number</label><br>
+                                                        <i class="fa fa-credit-card" aria-hidden="true"></i><input type='text' id='card-number' name='card-number' placeholder='1234 5678 9123 4567' title='Card Number'>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <label for="card-expiration">Expiration Date</label><br>
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i><input type='text' id='card-expiration' name='card-expiration' placeholder='YY/MM' title='Expiration' class="card-expiration">
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <label for="card-ccv">CVC/CCV</label>&nbsp;<i class="fa fa-info-circle" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="The CVV Number on your credit card or debit card is a 3 digit number on VISA, MasterCard and Discover branded credit and debit cards. On your American Express branded credit or debit card it is a 4 digit numeric code."></i><br>
+                                                        <i class="fa fa-lock" aria-hidden="true"></i><input type='text' id='card-ccv' name='card-ccv' placeholder='123' title='CVC/CCV'>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                            <div class="col-12 panel-footer creditcard-footer">
+                                                <div class="row">
+                                                    <div class="col-12 align-right"><button class="cancel">Cancel</button>&nbsp;<button class="confirm">Confirm & Pay</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+            <!--USER-->
+            
+            <div class="user container" id="container">
+                <div class="form-container sign-up-container ">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input class="textlog" type="text" placeholder="Name" />
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="">You already have an account?</a>
+                        <button class="button-singin-up">Sign Up</button>
+                    </form>
+                </div>
+
+                <!--LOG IN FORM -->
+
+                <div class="user form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your account</span>
+                        <input class="textlog" type="email" placeholder="Email" />
+                        <input class="textlog" type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button class="button-singin-up">Sign In</button>
+                    </form>
+                </div>
+                <div class="user overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1 style="color:black;">Hi, Friend!</h1>
+                            <p style="color: black;">Nếu bạn có tải khoản rồi hãy bấm SIGNIN</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1 style="color: black;">Hello, Friend!</h1>
+                            <p style="color: black;">Nếu bạn chưa có tải khoản hãy bấm vào SIGN UP</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                    <i class='bx bx-x' id="close-cart2"></i>
+                </div>
+            
+            
+            
+            
+            </div>
+        </div>
+    </div>
+    <section class="shop container-fluid p-5" id="product-list">
+        <h2 class="section-title">Shop Products</h2>
+        <!--Content-->
+        <div class="shop-content"> 
+            <!--box 1-->
+            <div class="product-box">
+                <img src="./Images/sneaker1.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product1.html'">
+                <h2 class="product-title">Zoom Freak 4</h2>
+                <span class="price">3.669.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 2-->
+            <div class="product-box">
+                <img src="./Images/sneaker2.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product2.html'">
+                <h2 class="product-title">Nike Renew Elevate 3</h2>
+                <span class="price">2.349.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 3-->
+            <div class="product-box">
+                <img src="./Images/sneaker3.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product3.html'">
+                <h2 class="product-title">Jordan One Take 4 PF </h2>
+                <span class="price">2.929.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 4-->
+            <div class="product-box">
+                <img src="./Images/sneaker4.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product4.html'">
+                <h2 class="product-title">KD Trey 5 X EP</h2>
+                <span class="price">2.649.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 5-->
+            <div class="product-box">
+                <img src="./Images/sneaker5.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product5.html'">
+                <h2 class="product-title">Jordan Nu Retro 1 Low</h2>
+                <span class="price">3.089.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 6-->
+            <div class="product-box">
+                <img src="./Images/sneaker6.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product6.html'">
+                <h2 class="product-title">Kyrie Infinity EP</h2>
+                <span class="price">3.063.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 7-->
+            <div class="product-box">
+                <img src="./Images/sneaker7.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product7.html'">
+                <h2 class="product-title">Air Jordan XXXVII PF</h2>
+                <span class="price">4.623.149 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+             <!--box 8-->
+             <div class="product-box">
+                <img src="./Images/sneaker8.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product8.html'">
+                <h2 class="product-title">Jordan Why Not .6 PF</h2>
+                <span class="price">4.409.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 9-->
+            <div class="product-box">
+                <img src="./Images/sneaker9.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product9.html'">
+                <h2 class="product-title">Zion 2 PF</h2>
+                <span class="price">3.519.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 10-->
+            <div class="product-box">
+                <img src="./Images/sneaker10.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product10.html'">
+                <h2 class="product-title">Zoom Freak 4</h2>
+                <span class="price">3.699.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 11-->
+            <div class="product-box">
+                <img src="./Images/sneaker11.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product11.html'">
+                <h2 class="product-title">LeBron XX EP</h2>
+                <span class="price">5.869.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!--box 12-->
+            <div class="product-box">
+                <img src="./Images/sneaker12.jpg" alt="" class="product-img" onclick="window.location='./Detail Product/product12.html'">
+                <h2 class="product-title">Cosmic Unity 3</h2>
+                <span class="price">4.409.000 VND</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid bg-light text-black-50 py-0 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-dark">THAYSHOP</span></h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <h6 class="text-dark text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">SUPPORT</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Product</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Return Policy</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms Of Use</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Our Brances</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Laos</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Thailand</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Japan</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Canada</a>
+                    <a class="text-black-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>United State</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-dark text-uppercase mb-4" style="letter-spacing: 5px;">Payment method</h5>
+                <img src="./Images/visa.png" alt="" style="width: 44px;">
+                <img src="./Images/master-card.png" alt="" style="width: 44px;">
+                <img src="./Images/moneygram.png" alt="" style="width: 44px;">
+                <img src="./Images/paypal.png" alt="" style="width: 44px;">
+                <h5 class="text-dark text-uppercase mt-5 mb-4  " style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>13 Street,Saphanxay,Pakse,LAOS </p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+865 20 96863648</p>
+                <p><i class="fa fa-envelope mr-2"></i>Khamkerd2000@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
+    <script src='main.js'></script>
+    <script>
+        document.querySelector("#close-cart2").onclick =() =>{
+        user.classList.remove("active")
+        }
+
+        document.querySelector(".cancel").onclick = () => {
+            checkout.classList.remove("active")
+            document.getElementById('search-icons').style.color='black';
+            document.getElementById('cart-icons').style.color='black';
+            document.getElementById('menu-icons').style.color='black';
+            document.getElementById('user-icons').style.color='black';
+        }
+        let checkout = document.querySelector(".checkout")
+
+        document.querySelector(".btn-checkout").onclick = () => {
+            checkout.classList.toggle("active");
+            navbar.classList.remove("active")
+            cart.classList.remove("active");
+            user.classList.remove("active");
+        }
+        
+</script>
+</body>
+</html>
